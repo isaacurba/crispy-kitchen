@@ -1,0 +1,6 @@
+var menu = document.getElementById("menu")
+var toggg = document.getElementById("menu-toggle")
+const active = () => {
+    menu.classList.toggle("active")
+}
+ toggg.addEventListener ("click", active)

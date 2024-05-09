@@ -1,0 +1,372 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   font-family: 'poppoin', sans-serif;
+}
+
+/*      THIS IS THE STYLE FOR THE HEADER BACKGROUND    */
+
+.img-container{
+    background: linear-gradient(to bottom,  rgba(0, 0, 0 ,0), rgba( 0, 0, 0, 0.9)), url(images/briana-tozour-V_Nkf1E-vYA-unsplash.jpg);
+    height: 25em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 50%;
+    background-repeat: no-repeat;
+}
+
+.container-content{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 65vh; 
+    color: white; 
+    text-transform: capitalize;
+}
+
+.container-content h1{
+    text-align: center;
+    font-size: 4em;
+    /* padding-top: 200px; */
+    color: #ffff;
+
+}
+.container-content p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #ffff;
+}
+
+/*     THIS IS THE STYLE FOR THE PARAGRAPH CONTENT   */
+
+.row{
+    display: flex;
+    padding: 100px 0px 200px 0px;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.foundation{
+    width: 50%;
+}
+
+
+.foundation-content{
+    /* letter-spacing: 1.2px; */
+    width: 40%;
+}
+
+.crisp{
+    line-height: 45px;
+}
+
+.foundation h2{
+    font-size: 31PX;
+    margin-bottom: 25PX;
+}
+
+
+.foundation-content p{
+    font-size: 20px;
+}
+
+
+.foundation-content a{
+color: #f3af24;
+font-style: italic;
+text-decoration: none;
+}
+
+.foundation a{
+    text-decoration: none;
+    /* margin: 30px;
+    margin-top: 50px; */
+}
+
+.links a{
+    padding:15px 40px;
+    margin: 20px;
+    border-radius: 10px;
+    border: solid;
+    /* font-size: 30PX; */
+    transition:0.5s ease-in-out;
+}
+
+.links a:hover:nth-child(1){
+    background-color: goldenrod;
+}
+
+.links a:hover:nth-child(2){
+    background-color: rgb(138, 71, 71);
+}
+
+.links a{
+    background-color: black;
+    color: white;
+}
+
+.links a:nth-child(2){
+    background-color:#dc3545;
+    color: white;
+}
+.custom-btn2 a{
+    background-color: #dc3545;
+    color: white;
+}
+
+/*      THIS IS THE STYLE FOR THE TEAM MEMBERS  1 AND 2  */
+
+.first{
+    background-color: #f9f9f9;
+    padding: 100px 0px ;
+}
+
+.first h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 100px;
+    text-shadow: 4px 4px 4px grey;
+}
+
+.card-container{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+}
+
+.card-container2{
+    width: 70%;
+    display: flex;
+    margin: 50px auto;
+    flex-direction: row;
+}
+
+.card{
+    text-align: center;
+    margin: 20px ;
+    transition: 0.5s  ease-in-out;
+    padding-bottom: 20px;
+}
+
+.card:hover{
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    border-radius: 20px;
+}
+.card2{
+    text-align: center;
+    margin: 50px;
+    transition: 0.5s ease-in-out;
+    padding-bottom: 20px;
+
+}
+
+.card2:hover{
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    border-radius: 20px;
+}
+
+
+
+
+
+
+/*    THIS IS THE STYLE FOR THE NEWSLETTER     */
+
+.second2{
+    background-color: white;
+}
+
+.second2 h1{
+    text-shadow: none;
+    text-align: left;
+}
+
+.newsletter-container{
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.newsletter{
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+
+.newsletter img{
+    width: 45%;
+    border-radius: 50%;
+}
+
+.newsletter-content{
+    margin: auto;
+    font-size: 20px;
+}
+
+.newsletter-content input, button{
+    width: 80%;
+    padding: 14px 10px;
+    margin: 10px;
+    font-size: 15px;
+    border: 0.5px solid;
+    border-radius: 10px;
+}
+
+.newsletter-content button{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.4s  ease-in-out;
+}
+
+.newsletter-content button:active{
+    border: 4px solid rgba(0, 0, 255, 0.404); 
+    /* outline: none; */
+}
+
+.newsletter-content button:hover{
+    background-color: #dc3545;
+    border: none;
+}
+
+.newsletter-content input:focus{
+    border: 4px solid rgba(0, 0, 255, 0.404); 
+    outline: none;  
+}
+
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  #scrollToTopBtn.show {
+    display: block;
+  }
+
+
+@media screen and (max-width:1000px) {
+
+    .img-container{
+        height: 15em;
+    }
+    .container-content{
+        height: 40vh ;
+    }
+    .container-content h1{
+    font-size: 2.5em;
+    margin-bottom: -10px;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        /* flex-wrap: nowrap; */
+    }
+    .foundation{
+        width: 80%;
+        margin: 50px auto;
+    }
+    .foundation-content{
+        width: 80%;
+    }
+
+    /*    THIS IS THE NEWS LETTER    */
+
+    .newsletter{
+        display: flex;
+        flex-direction: column;
+    }
+    .newsletter img{
+        width: 50%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .newsletter-content{
+        font-size: 7m;
+        width: 70%;
+    }
+    .newsletter-content p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:750px) {
+
+    .first h1{
+        font-size: 2.5em;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 75%;
+        margin: 20px auto;
+    }
+    .card-container2{
+        display: flex;
+        flex-direction: column;
+    }
+    .card2 {
+        width: 95%;
+        margin: 20px auto;
+    }
+    .foundation{
+        width: 90%;
+        margin: 50px auto;
+    }
+    .foundation-content{
+        width: 90%;
+    }
+    .newsletter img{
+        width: 80%;
+    }
+    .newsletter-content{
+        width: 90%;
+    }
+}
+@media screen and (max-width:500px){
+    .foundation h2{
+        font-size: 1.4em;
+    }
+    .row{
+        /* border: solid; */
+        padding: 200px 0px;
+        overflow: hidden;
+    }
+    .foundation{
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    /* border: solid; */
+    }
+
+    .links{
+    margin-bottom: 30px;
+    }
+
+    .links a:nth-child(2){
+        display: flex;
+        width: 30%;
+    }
+}

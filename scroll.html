@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    .container {
+height: 2000px; /* Increase the height to allow scrolling */
+}
+
+.box {
+width: 100px;
+height: 100px;
+background-color: red;
+transform: translateY(100px); /* Initial position */
+transition: transform 0.5s;
+}
+
+.box.translate {
+transform: translateY(0); /* Final position */
+transition: transform 0.5s;
+}
+.box:hover {
+transform: translateY(0);
+transition: transform 0.5s;
+}
+</style>
+<title>Scroll Translate Animation Example</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<div class="box"></div>
+</div>
+</body>
+</html>
