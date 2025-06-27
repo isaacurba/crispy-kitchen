@@ -11,37 +11,34 @@
 <body>
 
     <header>
-        <div class="menubar">
-            <div class="menu-toggle" id="toggle-menu">
-              <img src="img/bars.svg" alt="" class="hide">
-            <!-- <img src="img/x.svg" alt="" class="hide">   -->
-            </div>
-            
+        <div class="menu-toggle1" id="menu-toggle1">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
-        <!-- <div class="togglebar">
-            <div class="menu-toggle" id="menu-toggle">
-                 <div class="bar"></div>
-                 <div class="bar"></div>
-                 <div class="bar"></div>
-            </div>
-             -->
+
+   
+        <div>
+            <h4><a href="index.html">Crispy Kitchen</a></h4>
         </div>
-        <h4>cripsy kitchen</h4>
+        
         <nav>
-            <ul>
-                <li class="menu" id="menu"><a href="index.html">home</a></li>
+            <ul id="menu" class="menu">
+                <li><a href="index.html">home</a></li>
                 <li><a href="story.html">story</a></li>
                 <li><a href="menu.html">menu</a></li>
                 <li><a href="Ourupdate.html">our update</a></li>
                 <li class="active-menu"><a href="contact.html">contact</a></li>
             </ul>
         </nav>
-        <button><a href="reserv.html">reservation</a></button>
+
+        <div>
+            <button id="reservationBtn"><a>reservation</a></button>
+        </div>
         
     </header>
 
     <button onclick="scrollToTop()" id="scrollToTopBtn">Scroll to Top</button>
-
 
     <div class="bg-img-container">
         <div class="container-content">
@@ -119,6 +116,8 @@
             <div>
                 <h1>NIIT Surulere</h1>
             </div>
+
+            <div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126856.84505578963!2d3.2211012433593837!3d6.486639099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c76ba123b97%3A0x1830320de955ab71!2sNIIT%20Surulere!5e0!3m2!1sen!2sng!4v1714615116896!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             
@@ -174,24 +173,100 @@
                             <img src="img/youtube.svg" alt="" width="50px">
                         </div>
 
-                        <!-- <div class="copyright">
-                            <p>Copyright © 2022 Crispy Kitchen Co., Ltd.</p>
-                        </div> -->
+          
                     </div>
                     <div class="copyright">
                         <p>Copyright © 2022 Crispy Kitchen Co., Ltd.</p>
                     </div>
                 </div>
             </div>
-
-            
-            
-            
         </div>
+    </div>
+<!--          THIS IS THE RESERVATION FORM     -->
+          
+<div class="popup-overlay" id="popup-overlay"></div>
+
+<div class="reservation-container">
+
+    <div class="reservation" id="reservationForm">
+        <div class="x-o">
+            <div class="reg-head">
+                <h2>Reserve a table</h2>
+            </div>
+            
+            <div class="closeFormBtn" id="closeFormBtn">
+                <span></span><span></span>
+            </div>
+          
+        </div>
+    
+        <form action="#" method="POST" class="register">
+            <div class="arrangement">
+                <div class="form-layout">
+                    <label for="fname">First name</label>
+                    <input type="text" id="fname" name="fname" placeholder="First name" required>
+                </div>
+
+                <div class="form-layout">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+
+            </div>
+
+            <div class="arrangement">
+                <div class="form-layout">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
+                </div>
+        
+                <div class="form-layout">
+                    <label for="persons">Number of persons</label>
+                    <input type="number" id="persons" name="persons" placeholder="12 persons" required>
+                </div>
+
+            </div>
+
+            <div class="arrangement">
+                <div class="form-layout">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date">
+                </div>
+        
+                <div class="form-layout">
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time" placeholder="5:00 pm">
+                </div>
+
+            </div>
+    
+    
+    
+    
+            <div class="mssg">
+                <p>Special Request</p>
+                <textarea name="message" id="message" cols="45" rows="10"></textarea>
+                <button class="btn-msg" type="submit">Submit message</button>
+            </div>
+
+            <div class="keyboard">
+                <img src="img/sincerely-media-HoEYgBL_Gcs-unsplash.jpg" alt="keyboard image">
+            </div>
+
+
+
+        </form>
+
+                
+
 
     </div>
-    
+
+
+
+</div>
+
+    <script src="script.js"></script>
 
 </body>
-<script src="contact.js"></script>
 </html>
