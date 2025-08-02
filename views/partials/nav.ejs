@@ -1,0 +1,21 @@
+<header>
+  <div class="menu-toggle1" id="menu-toggle1">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <h4><a href="/">Crispy Kitchen</a></h4>
+
+  <nav>
+    <ul id="menu" class="menu">
+      <li class="<%= activePage === 'home' ? 'active-menu':'' %>"><a href="/">home</a></li>
+      <li class="<%= activePage === 'story' ? 'active-menu':'' %>"><a href="story">story</a></li>
+      <li class="<%= activePage === 'menu' ? 'active-menu':'' %>"><a href="menu">menu</a></li>
+      <li class="<%= activePage === 'ourupdate' ? 'active-menu':'' %>"><a href="Ourupdate">our update</a></li>
+      <li class="<%= activePage === 'contact' ? 'active-menu':'' %>"><a href="contact">contact</a></li>
+    </ul>
+  </nav>
+
+  <button id="reservationBtn"><a>reservation</a></button>
+</header>

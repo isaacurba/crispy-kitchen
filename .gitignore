@@ -1,0 +1,29 @@
+# Node modules (packages folder)
+node_modules/
+
+# Environment variables (secrets)
+.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# VS Code settings (optional)
+.vscode/
+
+# OS junk files
+*.swp
+*.swo
+
+# Coverage or test folders
+coverage/
+
+# Ignore uploads or database files (if any)
+uploads/
+*.sqlite
+*.db

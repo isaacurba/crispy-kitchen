@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Kitchen menu</title>
+</head>
+<body>
+
+<%- include('partials/nav') %>
+
+
+    <button onclick="scrollToTop()" id="scrollToTopBtn">Scroll to Top</button>
+    
+    <main>
+        <div class="container-menu-header">
+         <div class="header-bg">
+             <div class="header-texts">
+                 <h1>Our Menus</h1>
+                 <P><strong>Perfect for all Breakfast, Lunch and Dinner</strong></P>
+             </div>
+          </div>
+        </div>
+    </main>
+
+
+
+      <!--    THIS IS THE BREAKFAST MENU     -->
+
+    <section>
+      <h1>Breakfast Menu</h1>
+        <div class="bfast-card-container">
+            <div class="bfast-card ">
+                <!-- <div class="img-container"> -->
+                    <img src="images/breakfast/brett-jordan-8xt8-HIFqc8-unsplash.jpg" alt="" width="100%" >
+                <!-- </div> -->
+                
+                <div class="bfast-card-content">
+                    <strong><p>Fresh Start</p></strong> <small>$20.50</small>
+                   <div class="number"><h4> 4.4/5  </h4><img src="images/fourstar.png"  width="50%" class="star"  ><p>128 Reviews</p> </div>
+                    
+                </div>
+            </div>
+
+
+            <div class="bfast-card">
+                <img src="images/breakfast/lucas-swennen-1W_MyJSRLuQ-unsplash.jpg" alt=""  width="100%">
+                <div class="bfast-card-content">
+                    <strong><p>Baked Creamy</p></strong> <small>$25.50</small>
+                    <div class="number"><h4>3/5</h4> <img src="images/threestar.png" width="50%" class="star">  <p> 128 Reviews</p> </div>
+                </div>
+            </div>
+
+
+            <div class="bfast-card">
+                <img src="images/breakfast/louis-hansel-dphM2U1xq0U-unsplash.jpg" alt="" width="100%">
+                <div class="bfast-card-content">
+                    <strong><p>Burger Set</p></strong> <small>$30.00</small><br>
+                    <div class="number"><h4>3/5 </h4><img src="images/threestar.png" width="50%" class="star"> <p>128 Reviews</p> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    
+      <!--    THIS IS THE LUNCH MENU     -->
+
+      <section class="sec-2">
+        <h1>Lunch Menu</h1>
+        <div class="lunch-menu-container">
+            <div class="lunch-card">
+                <img src="images/lunch/louis-hansel-cH5IPjaAYyo-unsplash.jpg" alt="" width="100%">
+                    <div class="lunch-card-content">
+                    <strong><p>Super Steak Set</p></strong> <small>$32.75</small><br>
+                    <div class="number"><h4>4.2/5 </h4><img src="images/fourstar.png" width="50%" class="star"> <p>66 Reviews</p></div>
+                    </div>
+                </div>
+
+                <div class="lunch-card">
+                    <img src="images/lunch/louis-hansel-rheOvfxOlOA-unsplash.jpg" alt="" width="100%">
+                    <div class="lunch-card-content">
+                    <strong><p>Bread & Steak Set</p>
+                    </strong> <small>$42.50</small><br>
+                    <div class="number"><h4>3/5 </h4><img src="images/threestar.png" width="50%" class="star"> <p>84 Reviews</p> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+
+      <!--    THIS IS THE DINNER MENU    -->
+
+      <section>
+        <h1>Dinner Menu</h1>
+          <div class="diner-card-container">
+              <div class="diner-card">
+                  <img src="images/Dinner/farhad-ibrahimzade-ZipYER3NLhY-unsplash.jpg" alt="" width="100%">
+                  <div class="diner-card-content">
+                      <strong><p>Seafood Set</p></strong> <small>$65.50</small>
+                     <div class="number"><h4> 4.4/5  </h4><img src="images/fourstar.png" width="50%" class="star"><p>102 Reviews</p> </div>
+                      
+                  </div>
+              </div>
+  
+  
+              <div class="diner-card">
+                  <img src="images/Dinner/keriliwi-c3mFafsFz2w-unsplash.jpg" alt=""  width="100%">
+                  <div class="diner-card-content">
+                      <strong><p>Premium Steak</p></strong> <small>$74.25</small>
+                      <div class="number"><h4>3/5</h4> <img src="images/threestar.png" width="50%" class="star"> <p> 56 Reviews</p></div>
+                  </div>
+              </div>
+  
+  
+              <div class="diner-card">
+                  <img src="images/Dinner/farhad-ibrahimzade-isHUj3N0194-unsplash.jpg" alt="" width="100%">
+                  <div class="bfast-card-content">
+                      <strong><p>Salmon Set</p></strong> <small>$60</small>
+                      <div class="number"><h4>3/5 </h4><img src="images/threestar.png" width="50%" class="star"> <p>56 Reviews</p> </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- FOOTER -->
+
+<%- include('partials/footer') %>
+<%- include('partials/reservation') %>
+
+  
+
+
+    
+
+
+
+
+
+</body>
+<script src="script.js"></script>
+</html>

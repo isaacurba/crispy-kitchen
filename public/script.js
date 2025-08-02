@@ -1,11 +1,16 @@
 // ——— MENU TOGGLE ———
-const menuToggle = document.getElementById('menu-toggle1');
-const menu = document.getElementById('menu');
 
-menuToggle.addEventListener('click', () => {
-  menu.classList.toggle('active');
-  menuToggle.classList.toggle('activeB')
-});
+  const menuToggle = document.getElementById('menu-toggle1');
+  const menu = document.getElementById('menu');
+  const nav = document.getElementsByName('nav');
+  const body = document.body;
+
+  menuToggle.addEventListener('click', function () {
+    menu.classList.toggle('active');
+    menuToggle.classList.toggle('activeB');
+    body.classList.toggle('no-scroll'); // optional for scroll lock
+  });
+
 
 // ——— SLIDER ———
 const slides = document.querySelectorAll('.slide');
@@ -27,10 +32,13 @@ setInterval(() => {
 // ——— SCROLL TO TOP ———
 const scrollBtn = document.getElementById('scrollToTopBtn');
 window.addEventListener('scroll', () => {
-  scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+  scrollBtn.style.display = window.scrollY > 100 ? 'block' : 'none';
 });
 scrollBtn.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.scrollTo({ 
+    top: 0, 
+    behavior: 'smooth' 
+  });
 });
 
 // // ——— RESERVATION FORM POP UP ———
@@ -39,6 +47,7 @@ const reservationBtn = document.querySelector("#reservationBtn");
 const reservationForm = document.querySelector(".reservation");
 const closeFormBtn = document.querySelector("#closeFormBtn");
 const overlay = document.querySelector(".popup-overlay");
+
 
 // Open the popup
 reservationBtn.addEventListener("click", () => {

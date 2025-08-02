@@ -6,7 +6,7 @@
 }
 
 .bg-img-container{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),url(images/rod-long-I79Pgmhmy5M-unsplash.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(/images/rod-long-I79Pgmhmy5M-unsplash.jpg);
     height: 25em;
     background-repeat: no-repeat;
     background-size: cover;
