@@ -5,6 +5,8 @@ import { fileURLToPath } from "url";
 import ejs from "ejs";
 
 const app = express();
+const PORT = process.env.PORT || 3000;
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
@@ -40,6 +42,6 @@ app.post("/reservation", (req, res)=>{
 });
 
 
-app.listen(3000, ()=>{
-    console.log("Server responding at port 3000!!")
+app.listen(PORT, ()=>{
+    console.log(`Server responding at port ${PORT}`)
 });
